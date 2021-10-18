@@ -1,0 +1,60 @@
+<div fxFill="true">
+  <div fxLayout="row" fxFill="true" fxFlex="30"></div>
+
+  <div fxLayout="row" fxFlex fxFill="true" fxLayoutAlign="space-evenly center">
+    <form fxFlex="50">
+      <div fxLayout="column" fxFlex>
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <button
+            mat-icon-button
+            color="primary"
+            aria-label="Example icon button with a home icon"
+          >
+            <mat-icon>home</mat-icon>
+          </button>
+          <h4>Evaluación Crédito Hipotecario</h4>
+        </div>
+        <mat-form-field appearance="fill">
+          <mat-label>Nombre</mat-label>
+          <input
+            matInput
+            matAutosizeMinRows="200"
+            placeholder="Ingrese su nombre"
+            value=""
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput type="email" placeholder="me@email.com" value="" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Monto a solicitar</mat-label>
+          <input type="number" matInput placeholder="( UF 100 - UF 10.000)" value="" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Plazo en años</mat-label>
+          <input type="number" matInput placeholder="( 5 - 30 )" value="" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Ingresos mensuales percibidos </mat-label>
+          <input type="number" matInput placeholder="( $300.000 -  +$5.000.000) " value="" />
+        </mat-form-field>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <p style="font-family: Roboto; font-size: small; text-align: justify; margin-bottom: 30px;">
+            <mat-icon>info</mat-icon>
+            El monto máximo a financiar debe ser representar el <strong>90%</strong> del monto
+            de la propiedad, esto será confirmado al momento de cerrar el
+            acuerdo para el financiamiento.
+          </p>
+        </div>      
+        <div fxLayout="row" fxFill="true" fxLayoutAlign="space-between start">
+          <a mat-raised-button routerLink="/select">Regresar</a>
+          <button mat-raised-button color="primary">Evaluar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
